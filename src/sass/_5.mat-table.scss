@@ -1,0 +1,37 @@
+@import "../sass/2.variables";
+@import "../sass/4.mixin";
+
+.mat-mdc-header-row {
+  background-color: var(--primary-color) !important;
+  color: var(--quinary-color) !important;
+  font-family: font-family(baloo-tamma)!important;
+  box-shadow: 0px 0px 4px 1px #0ff;
+}
+.mat-mdc-header-cell {
+  font-size: font-size(font-size-small);
+}
+.mat-mdc-cell {
+  font-size: font-size(font-size-xsmall);
+}
+.mat-mdc-button,
+.mat-mdc-unelevated-button,
+.mat-mdc-raised-button,
+.mat-mdc-outlined-button {
+  font-size: font-size(font-size-xsmall);
+}
+// mat-label {
+//   font-size: font-size(font-size-small);
+// }
+
+.mdc-button__label {
+  font-size: font-size(font-size-xsmall);
+}
+.mat-mdc-dialog-title {
+  font-size: font-size(font-size-small-to-regular) !important;
+}
+.mdc-text-field__input {
+  font-size: font-size(font-size-xsmall) !important;
+}
+.mat-mdc-floating-label.mdc-floating-label {
+  font-size: font-size(font-size-xsmall) !important;
+}

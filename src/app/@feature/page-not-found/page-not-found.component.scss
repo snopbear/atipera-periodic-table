@@ -1,0 +1,47 @@
+@import "../../../sass/4.mixin";
+.not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--secondary-color);
+  color: var(--quinary-color);
+  text-align: center;
+
+  &__container {
+    padding: 2rem;
+    max-width: 60rem;
+    border-radius: 1rem;
+    background-color: var(--tertiary-color-m);
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
+    transition: var(--transition-cubic);
+  }
+
+  &__title {
+    font-size: font-size(font-size-xlarge);
+    font-weight: font-weight(font-weight-bold);
+    margin: 0;
+    transition: var(--transform-cubic);
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__description {
+    font-size: font-size("font-size-regular");
+    margin: 2rem 0;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 1rem 2rem;
+
+    color: var(--quinary-color);
+    border-radius: 0.5rem;
+    text-decoration: underline;
+    transition: var(--transition);
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

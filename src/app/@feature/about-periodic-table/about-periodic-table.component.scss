@@ -1,0 +1,74 @@
+@import '../../../sass/4.mixin';
+.project-brief {
+  &__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--secondary-color-m);
+    border-radius: 0.8rem;
+    color: var(--quinary-color);
+  }
+
+  &__title {
+    font-family: font-family("baloo-tamma");
+    font-size: font-size(font-size-medium);
+    font-weight: font-weight("font-weight-bold");
+    color: var(--quinary-color-z);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__section {
+    margin-bottom: 2.5rem;
+    &--highlight {
+      background-color: var(--tertiary-color-m);
+      padding: 1.5rem;
+      border-radius: 0.6rem;
+    }
+  }
+
+  &__subtitle {
+    font-family: font-family("baloo-tamma");
+    font-size: font-size(font-size-regular);
+    font-weight: font-weight("font-weight-bold");
+    color: var(--quinary-color-z);
+    margin-bottom: 1.5rem;
+  }
+
+  &__description {
+    font-size: font-size(font-size-small-to-regular);
+    font-weight: font-weight("font-weight-light");
+    color: var(--quinary-color-m);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+
+    strong {
+      color: var(--primary-color);
+    }
+  }
+
+  &__list {
+    margin: 0;
+    padding-left: 1.5rem;
+
+    &-item {
+      font-family: font-family("baloo-tamma");
+      font-size: font-size(font-size-small);
+      font-weight: font-weight("font-weight-regular");
+      color: var(--quinary-color);
+      margin-bottom: 1rem;
+      list-style-type: disc;
+    }
+  }
+
+  &__code {
+    background-color: var(--secondary-color);
+    padding: 1rem;
+    border-radius: 5px;
+    font-family: font-family("baloo-tamma");
+    font-size: font-size(font-size-small);
+    color: var(--quinary-color-m);
+    white-space: pre;
+    overflow-x: auto;
+  }
+}

@@ -1,0 +1,126 @@
+@import '../../../sass/4.mixin';
+@import '../../../sass/2.variables';
+
+.profile {
+  &__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--secondary-color-m);
+    border-radius: 0.8rem;
+    color: var(--quinary-color);
+  }
+
+  &__title {
+    font-family: font-family("baloo-tamma");
+    font-size: font-size(font-size-medium);
+    font-weight: font-weight("font-weight-bold");
+    color: var(--quinary-color-z);
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__section {
+    margin-bottom: 2.5rem;
+
+    &--highlight {
+      background-color: var(--tertiary-color-m);
+      padding: 1.5rem;
+      border-radius: 0.6rem;
+    }
+  }
+
+  &__subtitle {
+    font-family: font-family("baloo-tamma");
+    font-size: font-size(font-size-regular);
+    font-weight: font-weight("font-weight-bold");
+    color: var(--quinary-color-z);
+    margin-bottom: 1.5rem;
+  }
+
+  &__description {
+    font-size: font-size(font-size-small-to-regular);
+    font-weight: font-weight("font-weight-light");
+    color: var(--quinary-color-m);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+
+    strong {
+      color: var(--quinary-color);
+            text-shadow: 0 0 4px var(--quinary-color-z), 0 0 0 var(--quinary-color-z);
+
+    }
+  }
+
+  &__link {
+    color: var(--quinary-color);
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  &__experience-list {
+    margin: 0;
+    padding-left: 1.5rem;
+
+    &--item {
+      margin-bottom: 2rem;
+
+      &__title {
+        font-family: font-family("baloo-tamma");
+        font-size: font-size(font-size-small-to-regular);
+        font-weight: font-weight("font-weight-bold");
+        color: var(--quinary-color);
+        margin-bottom: 0.5rem;
+      }
+
+      &__company {
+        font-family: font-family("baloo-tamma");
+        font-size: font-size(font-size-small);
+        font-weight: font-weight("font-weight-medium");
+        color: var(--quinary-color);
+        margin-bottom: 0.5rem;
+      }
+
+      &__dates {
+        font-size: font-size(font-size-small);
+        color: var(--quinary-color-m);
+        margin-bottom: 0.5rem;
+      }
+
+      &__description {
+        font-size: font-size(font-size-small-to-regular);
+        color: var(--quinary-color-m);
+        line-height: 1.6;
+      }
+    }
+  }
+
+  &__education-list {
+    margin: 0;
+    padding-left: 1.5rem;
+
+    &--item {
+      margin-bottom: 1.5rem;
+
+      &__title {
+        font-family: font-family("baloo-tamma");
+        font-size: font-size(font-size-small-to-regular);
+        font-weight: font-weight("font-weight-bold");
+        color: var(--quinary-color);
+      }
+
+      &__institution {
+        font-size: font-size(font-size-small);
+        color: var(--quinary-color-m);
+      }
+
+      &__dates {
+        font-size: font-size(font-size-small);
+        color: var(--quinary-color-m);
+      }
+    }
+  }
+}

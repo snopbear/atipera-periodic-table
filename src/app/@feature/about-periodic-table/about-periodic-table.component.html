@@ -1,0 +1,66 @@
+<section class="project-brief">
+  <div class="project-brief__container">
+    <h1 class="project-brief__title">Project Brief: Periodic Table Viewer</h1>
+
+    <!-- Overview Section -->
+    <div class="project-brief__section">
+      <h2 class="project-brief__subtitle">Overview</h2>
+      <p class="project-brief__description">
+        This project aims to develop an Angular application displaying a table of periodic elements with four columns:
+        <strong>Number</strong>, <strong>Name</strong>, <strong>Weight</strong>, and <strong>Symbol</strong>. The
+        application simulates downloading data on startup and provides editing capabilities. Additionally, a filter will
+        allow users to search across all fields in the table.
+      </p>
+    </div>
+
+    <!-- Key Requirements Section -->
+    <div class="project-brief__section">
+      <h2 class="project-brief__subtitle">Key Requirements</h2>
+      <ul class="project-brief__list">
+        <li class="project-brief__list-item"><strong>Table Display:</strong> Display a table with the columns: Number,
+          Name, Weight, and Symbol. Use Angular Material’s table component for the layout.</li>
+        <li class="project-brief__list-item"><strong>Simulated Data Download:</strong> Simulate data loading during
+          application startup and populate the table with predefined elements.</li>
+        <li class="project-brief__list-item"><strong>Data Editing Feature:</strong> Allow users to edit each row’s data
+          through a popup dialog, and update the table after confirming changes.</li>
+        <li class="project-brief__list-item"><strong>Filter Functionality:</strong> Implement a search input to filter
+          the table by all fields. Use a 2-second debounce delay for filtering.</li>
+      </ul>
+    </div>
+
+    <!-- Initial Data Section -->
+    <div class="project-brief__section">
+      <h2 class="project-brief__subtitle">Initial Data</h2>
+      <p class="project-brief__description">
+        The following data will be used to populate the table on startup:
+      </p>
+      <pre class="project-brief__code">
+const ELEMENT_DATA: PeriodicElement[] = [
+  {{ '{' }}position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'{{ '}' }},
+  {{ '{' }}position: 2, name: 'Helium', weight: 4.0026, symbol: 'He'{{ '}' }},
+  {{ '{' }}position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li'{{ '}' }},
+  {{ '{' }}position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be'{{ '}' }},
+  {{ '{' }}position: 5, name: 'Boron', weight: 10.811, symbol: 'B'{{ '}' }},
+  {{ '{' }}position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C'{{ '}' }},
+  {{ '{' }}position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N'{{ '}' }},
+  {{ '{' }}position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O'{{ '}' }},
+  {{ '{' }}position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F'{{ '}' }},
+  {{ '{' }}position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'{{ '}' }}
+];
+      </pre>
+    </div>
+
+    <!-- Development Details Section -->
+    <div class="project-brief__section">
+      <h2 class="project-brief__subtitle">Development Details</h2>
+      <ul class="project-brief__list">
+        <li class="project-brief__list-item"><strong>Component Library:</strong> Use Angular Material components,
+          including tables, dialogs, and buttons.</li>
+        <li class="project-brief__list-item"><strong>Angular Version:</strong> The project should be built using Angular
+          18.2.2.</li>
+        <li class="project-brief__list-item"><strong>No Unit Tests:</strong> Unit tests are not required for this
+          assignment.</li>
+      </ul>
+    </div>
+  </div>
+</section>

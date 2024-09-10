@@ -1,0 +1,18 @@
+@import "../../../sass/4.mixin"; // or wherever your mixins/variables are defined
+
+.table-container {
+  padding: 2rem 5rem;
+  margin: 2rem 0 0 0 ;
+  &__border{
+      padding: 2rem 5rem;
+      border: 1px solid var(--quinary-color);
+      border-radius: 1rem;
+  }
+  &__table{
+    margin: 4rem 0 0 0;
+  }
+}
+
+mat-form-field {
+  width: 20%;
+}
