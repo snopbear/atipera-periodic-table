@@ -78,7 +78,7 @@
         top: 2rem;
         right: 3rem;
         cursor: pointer;
-        background-color: var( --primary-color);
+        background-color: var(--primary-color);
         padding: 1rem;
         border-radius: 50%;
         display: flex;
@@ -106,7 +106,7 @@
       }
       &--link {
         height: 100%;
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color);
         display: flex;
         flex-direction: column;
         justify-content: center;
