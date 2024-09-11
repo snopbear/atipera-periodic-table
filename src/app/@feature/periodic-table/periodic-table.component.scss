@@ -1,12 +1,14 @@
 @import "../../../sass/4.mixin"; // or wherever your mixins/variables are defined
 
 .table-container {
-  padding: 2rem 5rem;
-  margin: 2rem 0 0 0 ;
+  margin: 3rem ;
   &__border{
-      padding: 2rem 5rem;
-      border: 1px solid var(--quinary-color);
-      border-radius: 1rem;
+    max-width: 120rem;
+    margin: 3rem auto;
+    padding: 3rem;
+    background-color: var(--secondary-color-m);
+    border-radius: 0.8rem;
+    color: var(--quinary-color);
   }
   &__table{
     margin: 4rem 0 0 0;

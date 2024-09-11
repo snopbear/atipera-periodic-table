@@ -4,7 +4,7 @@
 .mat-mdc-header-row {
   background-color: var(--primary-color) !important;
   color: var(--quinary-color) !important;
-  font-family: font-family(baloo-tamma)!important;
+  font-family: font-family(baloo-tamma) !important;
   box-shadow: 0px 0px 4px 1px #0ff;
 }
 .mat-mdc-header-cell {
@@ -19,9 +19,6 @@
 .mat-mdc-outlined-button {
   font-size: font-size(font-size-xsmall);
 }
-// mat-label {
-//   font-size: font-size(font-size-small);
-// }
 
 .mdc-button__label {
   font-size: font-size(font-size-xsmall);

@@ -1,0 +1,38 @@
+/* Scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+  width: 1.2rem;
+  height: 1.2rem; /* for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--quinary-color-m); /* White background (quinary-color-m) */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color); /* Primary Color Scrollbar */
+  border-radius: 0.6rem; /* Rounded corners */
+  border: 0.3rem solid var(--quinary-color-m); /* White border to blend with background */
+  transition: var(--transition); /* Smooth transition */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--quinary-color); /* Quinary Color on hover */
+  border: 0.3rem solid var(--quinary-color-z); /* Modified Quinary Color */
+}
+
+/* Firefox scrollbar */
+* {
+  scrollbar-width: thin; /* Size of the scrollbar */
+  scrollbar-color: var(--primary-color) var(--quinary-color-m); /* Primary color for thumb, white for background */
+}
+
+/* Scrollbar for Internet Explorer 10+ */
+::-ms-scrollbar {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* Transition effects on scroll thumb */
+::-webkit-scrollbar-thumb {
+  transition: var(--transition-cubic);
+}
